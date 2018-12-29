@@ -1,0 +1,18 @@
+net: "train.prototxt"
+#echo= 100
+#num_gpu = 3
+iter_size: 1
+test_iter: 100
+test_interval: 2000
+display: 200
+base_lr: 0.001
+lr_policy: "poly"
+power: 1
+max_iter: 200001 # 2000*100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "result/resnet18+DFL_model"
+#random_seed: 0
+test_initialization: false
+#device_id: 0,1
